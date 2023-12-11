@@ -66,7 +66,7 @@ function(get_packages_and_link)
 
         # Download and extract the compressed archive
         if (NOT of-deps-${dependency}_CONFIGURED)
-            set(_URL "http://ci.openframeworks.cc/libs/openFrameworksLibs_master_${dependency}")
+            set(_URL "https://libs.danoli3.com/ci.openframeworks.cc/libs/openFrameworksLibs_master_${dependency}")
             message(STATUS "[openframeworks] Fetching ${_URL}")
             CPMAddPackage(
                 NAME of-deps-${dependency}
